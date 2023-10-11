@@ -26,7 +26,11 @@ def player(prev_play, opponent_history=[], play_order={}):
     viable_options={'P':'S','R':'P', 'S':'R' }
  
     guess = viable_options[prediction]
-    # print(guess)
+
+    random_or_not = random.randint(0,5000)
+    if (random_or_not==2):
+        guess=random.choice(['P','R','S'])
+        # print(guess)
 
     # guess = viable_options[most_frequent]
 
